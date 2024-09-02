@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App Project JavaScript | CodingNepal</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external JavaScript file, with 'defer' to load it after the HTML is parsed -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Main heading of the weather app -->
+    <h1>Weather Dashboard</h1>
+    <!-- Container to hold the input fields and weather data -->
+    <div class="container">
+      <!-- Section for user input to enter city name or use current location -->
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <!-- Input field for the user to type in a city name -->
+        <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+        <!-- Button to trigger search based on the city name entered -->
+        <button class="search-btn">Search</button>
+        <div class="separator"></div>
+        <!-- Button to trigger search using the user's current location -->
+        <button class="location-btn">Use Current Location</button>
+      </div>
+      
+      <!-- Dropdown to select from recent cities (hidden initially) -->
+      <select id="recent-cities-dropdown" style="display: none; margin-top: 40px;">
+        <option value="" disabled selected>Select a recent city</option>
+      </select> 
+       
+      <!-- Section to display the weather data -->
+      <div class="weather-data">
+        <!-- Subsection for displaying current weather details -->
+        <div class="current-weather">
+          <div class="details">
+            <!-- Placeholder for the current city and weather condition -->
+            <h2>_______ ( ______ )</h2>
+            <!-- Placeholder for the current temperature -->
+            <h6>Temperature: __°C</h6>
+            <!-- Placeholder for the current wind speed -->
+            <h6>Wind: __ M/S</h6>
+            <!-- Placeholder for the current humidity level -->
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        
+        <!-- Subsection for displaying a 5-day weather forecast -->
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <!-- List of forecast cards -->
+          <ul class="weather-cards">
+            <!-- Placeholder card for the first day of the forecast -->
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <!-- Placeholder card for the second day of the forecast -->
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <!-- Placeholder card for the third day of the forecast -->
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <!-- Placeholder card for the fourth day of the forecast -->
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <!-- Placeholder card for the fifth day of the forecast -->
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __°C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
